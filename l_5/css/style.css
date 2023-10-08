@@ -1,0 +1,185 @@
+/* Основні стилі */
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Geologica:200,regular,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+/* Скидання стилів */
+@import url("reset.css");
+/*------------------*/
+
+body {
+	font-family: "Ubuntu";
+	padding: 10px;
+}
+/*header*/
+h1 {
+	font-weight: 400;
+	font-size: 40px;
+	text-align: center;
+	color: #c48600;
+	text-shadow: 5px 5px 8px #292929;
+}
+
+.image-contaner {
+	text-align: right;
+}
+h1 ~ p {
+	text-align: center;
+}
+h1 ~ p:last-of-type {
+	text-align: left;
+}
+header > ul > li {
+	color: #777673;
+	padding: 3px 0;
+}
+header > ul > li:hover {
+	color: #48397e;
+	padding: 0 1px;
+}
+header ul > li > ul > li {
+	color: #0cec69;
+	padding: 0 10px;
+	text-decoration: underline;
+}
+header ul > li > ul > li:hover {
+	color: #595a59;
+}
+/*---------------*/
+/*main*/
+h2 {
+	font-weight: 600;
+	font-size: 35px;
+	text-align: center;
+	color: #c48600;
+}
+h3 {
+	padding: 10px 0;
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+	color: #0eff42;
+	text-shadow: 5px 5px 8px #0059ff;
+}
+
+ul,
+ol {
+	color: #00ff22;
+	font-size: 18px;
+	font-family: Inter;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.history-technology-overview p {
+	font-family: "Geologica";
+	font-weight: 700;
+	text-indent: 25px;
+	word-spacing: 12px;
+	font-style: normal;
+}
+
+.history-corporate-benefits > p {
+	font-family: "Lato";
+	font-weight: 500;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.history-public-wifi p {
+	font-family: "Lato";
+	font-weight: 100;
+	font-size: 12px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+#mobile-vs-wifi {
+	letter-spacing: 15px;
+	font-size: 30px;
+	color: rgba(5, 10, 58, 0.568);
+}
+
+.history-mobile-vs-wifi {
+	font-family: "Geologica";
+	font-size: 26px;
+	word-spacing: 3px;
+	line-height: 0.75;
+	text-decoration: line-through;
+}
+
+#history-novel_standards p {
+	font-family: "Geologica";
+	font-style: italic;
+	font-weight: 700;
+	color: #7fff00;
+}
+/*не находит*/
+[id~="tory-principle-of"] > p {
+	color: #ff7f50;
+	font-family: Lato;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.list__item {
+	font-family: "Geologica";
+	font-weight: 200;
+	font-size: 40px;
+}
+
+.characteristics {
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #37393f;
+	text-shadow: 0px 1px 1px;
+	padding-bottom: 5px;
+}
+
+.characteristics-802-11n {
+	font-family: "Inter";
+	color: #7d7d7d;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.characteristics-technology-wifi-direct {
+	color: #37393f;
+	font-size: 18px;
+	font-family: Poppins;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.characteristics-advantages-wifi li {
+	color: #2fceff;
+	font-size: 18px;
+	font-family: Inter;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+footer p {
+	color: #37393f;
+	text-shadow: 0px 10px 10px;
+	padding-bottom: 5px;
+}
+
+.top-btn {
+	display: inline-block;
+}
+.arrow-up {
+	vertical-align: top;
+}
+.top-btn a {
+	width: 50px;
+}
+.arrow-up img,
+.home-work-2 img {
+	height: 50px;
+	width: 50px;
+}

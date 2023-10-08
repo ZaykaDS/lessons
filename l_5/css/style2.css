@@ -1,0 +1,83 @@
+/* Основні стилі */
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Geologica:200,regular,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+/* Скидання стилів */
+@import url("reset.css");
+/*------------------*/
+* {
+	font-family: "Inter";
+	color: #7d7d7d;
+}
+body {
+	margin: 0 50px;
+}
+/*header*/
+h1 {
+	font-weight: 400;
+	font-size: 40px;
+	text-align: center;
+	color: #c48600;
+	text-shadow: 5px 5px 8px #292929;
+}
+.why-us {
+	width: 692px;
+}
+h2,
+h3 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 127%;
+}
+h2 {
+	margin-top: 37px;
+	color: #37393f;
+	font-size: 30px;
+}
+h3 {
+	margin-top: 42px;
+	color: #6b77e5;
+	font-size: 20px;
+}
+
+p {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 146.187%; /* 26.314px */
+}
+
+.after-h3 {
+	margin-top: 12px;
+}
+div.p-info {
+	width: 830px;
+}
+.p-info > h2 {
+	font-size: 40px;
+	font-weight: 700;
+}
+.content {
+	margin-top: 13px;
+}
+.content > p:not(:last-child) {
+	padding-bottom: 20px;
+}
+.content > ul {
+	margin-left: 43px;
+}
+
+.content > ul > li {
+	padding-bottom: 20px;
+	list-style-type: disc;
+}
+.content > ol {
+	margin-left: 43px;
+}
+.content > ol > li {
+	padding-bottom: 20px;
+	list-style-type: decimal-leading-zero;
+}
