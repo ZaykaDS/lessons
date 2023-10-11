@@ -1,0 +1,149 @@
+/* Скидання стилів */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+/* Основні стилі */
+body {
+	font-family: "Inter";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins";
+}
+.header-title {
+	margin-bottom: 30px;
+	background-color: rgb(21, 223, 206);
+}
+.header-title h1 {
+	font-family: "DM Serif Text", serif;
+	color: #cc0033;
+	font-size: 27px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.container {
+	width: 692px;
+	margin: 0 auto;
+}
+.title-image {
+	padding-bottom: 37px;
+}
+.description__title {
+	padding-bottom: 12px;
+}
+.description__title {
+	color: #37393f;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 127%; /* 38.1px */
+}
+p {
+	color: #7d7d7d;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 146.187%; /* 26.314px */
+}
+
+.container > .consulting-text > p {
+	padding-bottom: 42px;
+}
+.media__subtitle {
+	color: #6b77e5;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 127%; /* 25.4px */
+	padding-bottom: 12px;
+}
+.media-text > p {
+	padding-bottom: 40px;
+}
+.benefits__img,
+.benefits__content {
+	display: inline-block;
+	width: 49%;
+}
+.benefits__img {
+	vertical-align: top;
+}
+.benefits__title {
+	color: #37393f;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 127%; /* 31.75px */
+	padding-bottom: 15px;
+}
+.benefits__content > p {
+	color: #40ddb6;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 127%; /* 25.4px */
+	padding-bottom: 21px;
+}
+
+.benefits__list > li {
+	color: #7d7d7d;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding-bottom: 20px;
+}
+/*_____*/
+.jewels__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px 0px 50px;
+}
+.jewels-info {
+	display: inline-block;
+	padding: 21px 0;
+	max-width: 563px;
+}
+.jewels-info > p {
+	color: #d06b00;
+	font-family: Inter;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-style: normal;
+	line-height: normal;
+	margin-bottom: 13px;
+}
+.jewels-title > h2 {
+	color: #0e333d;
+	font-family: "DM Serif Text", serif;
+	font-size: 59px;
+	line-height: 1.47;
+	margin-bottom: 25px;
+}
+.jewels-text {
+	color: #474747;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+.jewels-img {
+	vertical-align: top;
+	display: inline-block;
+	max-width: 100%;
+}
+.jewels1 {
+	margin-left: 38px;
+	max-width: 100%;
+}
+.jewels2 {
+	margin-left: 22px;
+	max-width: 100%;
+}
