@@ -1,0 +1,112 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+.title {
+	font-family: "Inter", serif;
+	color: #7d7d7d;
+	font-size: 30px;
+	line-height: 146.187%; /* 26.314px */
+	text-align: center;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.background-color-block {
+	background: linear-gradient(180deg, rgb(0, 166, 222) 50%, yellow 50%);
+	padding: 25px;
+}
+.background-color-block > *,
+.background-image-block > * {
+	font-size: 35px;
+	padding: 100px;
+}
+.background-color-block > .green {
+	background-color: green;
+	color: #a00000;
+}
+
+.background-color-block > .transparent {
+	background-color: transparent;
+}
+
+.background-color-block > .blue {
+	background-color: #200772;
+	color: aqua;
+}
+
+/*  */
+.background-image-block {
+	background: linear-gradient(90deg, #ff5733 0%, #ffbd33 50%, #33ff57 100%);
+}
+.background-image-block > .url {
+	background-image: url("../img/practice.jpg");
+	background-size: contain;
+}
+
+.background-image-block > .no-repeat {
+	background:
+		url("../img/practice.jpg") center no-repeat,
+		url("../img/practice.jpg") left top no-repeat,
+		url("../img/practice.jpg") 100% 100% no-repeat,
+		url("../img/practice.jpg") 250px 100px no-repeat,
+		url("../img/practice.jpg") 75% 50px no-repeat;
+}
+
+.background-image-block > .repeat-x {
+	background: url("../img/practice.jpg") center repeat-x;
+}
+
+.background-image-block > .repeat-y {
+	background:
+		url("../img/practice.jpg") center repeat-y,
+		url("../img/practice.jpg") right repeat-y,
+		url("../img/practice.jpg") left repeat-y;
+}
+.background-big-image-block {
+	min-height: 600px;
+}
+.background-big-image-block > * {
+	padding: 100px;
+}
+.background-big-image-block > .scroll {
+	background: url("../img/practice2.jpg") center no-repeat;
+	background-attachment: scroll;
+}
+
+.background-big-image-block > .fixed {
+	background: url("../img/practice2.jpg") center no-repeat;
+	background-attachment: fixed;
+}
+
+.background-big-image-block > .size-1 {
+	background: url("../img/practice2.jpg") center no-repeat;
+	background-size: 50%;
+}
+
+.background-big-image-block > .size-2 {
+	background: url("../img/practice2.jpg") center no-repeat;
+	background-size: 400px 175px;
+}
+
+.background-big-image-block > .size-3 {
+	background: url("../img/practice2.jpg") center no-repeat;
+	background-size: contain;
+}
+
+.background-big-image-block > .size-4 {
+	background: url("../img/practice2.jpg") center no-repeat;
+	background-size: cover;
+}
+footer {
+	text-align: center;
+}
+footer > a {
+	font-size: 24px;
+	color: #02ff49;
+	text-shadow:
+		-5px 10px 10px #edf100,
+		2px 2px 2px #020080;
+	padding: 20px;
+	width: 100%;
+}
