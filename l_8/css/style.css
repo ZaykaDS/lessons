@@ -257,6 +257,7 @@ h2 {
 	font-weight: 600;
 	border-radius: 8px;
 	line-height: 1;
+	display: inline-block;
 }
 .ehp-picture {
 	display: inline-block;
