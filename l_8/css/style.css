@@ -215,6 +215,7 @@ h2 {
 .ehp-container {
 	width: 1240px;
 	margin: 0 auto;
+	font-size: 0;
 }
 .ehp-info {
 	display: inline-block;
