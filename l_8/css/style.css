@@ -25,11 +25,11 @@ h6 {
 
 .cw-container {
 	max-width: 673px;
-	margin: 0 auto;
+	margin: 0 auto 150px;
 }
 .cw-title {
 	max-width: 415px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .square {
 	background: #40ddb6;
@@ -47,7 +47,6 @@ h2 {
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 121%; /* 48.4px */
-	margin-bottom: 10px;
 }
 .cw-content {
 	margin-bottom: 20px;
@@ -97,14 +96,17 @@ h2 {
 }
 
 .cw-points-2 > ul > li:not(:last-child) {
-	margin-right: 23px;
+	padding-right: 23px;
 }
 
+.cw-button {
+	min-width: 184px;
+	height: 65px;
+}
 .cw__button {
 	display: inline-block;
 	color: #fff;
-	width: 184px;
-	height: 65px;
+	text-align: center;
 	background: #6b77e5;
 	padding: 22px 27px;
 	font-weight: 600;
@@ -113,19 +115,18 @@ h2 {
 
 .lp-container {
 	width: 1220px;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 }
 .lp-title {
 	max-width: 852px;
 	text-align: center;
-	margin: 150px auto 0px;
+	margin: 0 auto 47px;
 }
 .lp-title > h3 {
 	display: inline-block;
 }
 .lp-content {
 	max-width: 1220px;
-	margin-top: 47px;
 }
 .lp-content > ul > li {
 	width: 30%;
@@ -136,7 +137,7 @@ h2 {
 	margin-bottom: 58px;
 }
 .lp-content > ul > li:not(:last-child) {
-	margin-right: 34px;
+	padding-right: 34px;
 }
 .lp-background {
 	min-height: 501px;
@@ -144,22 +145,22 @@ h2 {
 	margin-bottom: 24px;
 }
 .lp-background-1st {
-	background: url(../img/lp-bg-1.jpg) 0 0 no-repeat;
+	background: url(../img/lp-bg-1.jpg) center/ cover no-repeat;
 }
 .lp-background-2nd {
-	background: url(../img/lp-bg-2.jpg) 0 0 no-repeat;
+	background: url(../img/lp-bg-2.jpg) center/ cover no-repeat;
 }
 .lp-background-3rd {
-	background: url(../img/lp-bg-3.jpg) 0 0 no-repeat;
+	background: url(../img/lp-bg-3.jpg) center/ cover no-repeat;
 }
 .lp-background-4th {
-	background: url(../img/lp-bg-4.jpg) 0 0 no-repeat;
+	background: url(../img/lp-bg-4.jpg) center/ cover no-repeat;
 }
 .lp-background-5th {
-	background: url(../img/lp-bg-5.jpg) 0 0 no-repeat;
+	background: url(../img/lp-bg-5.jpg) center/ cover no-repeat;
 }
 .lp-background-6th {
-	background: url(../img/lp-bg-6.jpg) 0 0 no-repeat;
+	background: url(../img/lp-bg-6.jpg) center/ cover no-repeat;
 }
 .lp-info > h3 {
 	margin-bottom: 10px;
@@ -170,7 +171,7 @@ h2 {
 }
 .cl-container {
 	width: 1240px;
-	margin: 100px auto 0;
+	margin: 0 auto;
 }
 
 .cl-title {
@@ -223,6 +224,7 @@ h2 {
 	width: 50%;
 	min-width: 610px;
 	min-height: 640px;
+	max-height: 640px;
 	background: url(../img/fashion1.jpg) center / cover no-repeat;
 	padding: 183px 74px 175px;
 	border-radius: 10px 0 0 10px;
@@ -264,6 +266,7 @@ h2 {
 	width: 50%;
 	min-width: 610px;
 	min-height: 640px;
+	max-height: 640px;
 	background: url(../img/fashion2.jpg) center / cover no-repeat;
 	border-radius: 0 10px 10px 0;
 	vertical-align: middle;
