@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>l_9</title>
+	<link rel="stylesheet" href="css/header_footer.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header id="header" class="header">
+		<div class="header-container">
+			<div class="header-menu">
+				<ul class="header-list">
+					<li class="header-item"><a href="index.html">Псевдокласи та псевдоелементи</a></li>
+					<li class="header-item"><a href="game.html">Гра "Дійти до кінця"</a></li>
+					<li class="header-item"><a href="blocks.html">Блоки з макету</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="pseudo-classes">
+				<h2>Псевдокласи стану</h2>
+				<p>Приклади використання псевдокласів стану</p>
+				<!-- :hover -->
+				<div class="box" id="box-hover">
+					<div class="box-content">
+						<h3>Селектор "<span>:hover</span>"</h3>
+						<p>Селектор "<span>:hover</span>" використовується для вибірки та задання стилю посиланням, на які наведено курсор.</p>
+						<p>Селектор "<span>:hover</span>" має йти після селекторів "<span>:link</span>" та "<span>:visited</span>", якщо такі вказані.</p>
+					</div>
+					<div class="box-example">
+						<div class="example-text">
+							<p>Селектор <span class="hover">":hover"</span> використовується для вибірки та задання стилю посиланням, на які наведено курсор.</p>
+						</div>
+						<div class="example-bcgnd">
+							<p>Селектор <span class="hover">":hover"</span> використовується для вибірки та задання стилю посиланням, на які наведено курсор.</p>
+						</div>
+					</div>
+				</div>
+				<!-- :active -->
+				<div class="box" id="box-active">
+					<div class="box-content">
+						<h3>Селектор <span class="hover">":<span>active</span>"</span></h3>
+						<p>Селектор <span>":<span>active</span>"</span> використовується для вибірки та задання стилю активним посиланням.</p>
+						<p>Посилання стає активним, коли користувач натискає на нього.</p>
+						<p>Селектор <span>":<span>active</span>"</span> має йти після селектора <span><a href="#box-hover">hover</a></span>, якщо він вказаний.</p>
+					</div>
+					<div class="box-example">
+						<div class="example-text">
+							<p><span class="span-hover span-active">Посилання стає активним, коли користувач натискає на нього.</span></p>
+						</div>
+						<div class="example-bcgnd">
+							<p>Посилання стає активним, коли користувач натискає на нього.</p>
+						</div>
+					</div>
+				</div>
+				<!-- :visited -->
+				<div class="box">
+					<div class="box-content">
+						<h3>Селектор <span class="span-hover">":<span class="span-active">visited</span>"</span></h3>
+						<p>Даний псевдоклас застосовується до посилань, які користувач уже відвідав раніше.</p>
+						<p>Зазвичай таке посилання змінює свій колір за умовчанням на фіолетовий, але за допомогою стилів колір і інші параметри можна задати самостійно.</p>
+					</div>
+					<div class="box-example">
+						<div class="example-text">
+							<ul class="example-list">
+								<li><a href="#link1" id="link1">link1</a></li>
+								<li><a href="#link2" id="link2">link2</a></li>
+								<li><a href="#link3" id="link3">link3</a></li>
+								<li><a href="#link4" id="link4">link4</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- :focus -->
+				<div class="box">
+					<div class="box-content">
+						<h3>Селектор <span class="span-focus">":<span class="span-active">focus</span>"</span></h3>
+						<p>Даний псевдоклас застосовуєтьсядо елементів, які знаходяться у фокусі (зазвичай при навігації за допомогою клавіатури)</p>
+						<p>Зазвичай використовується для форм та посилань.</p>
+					</div>
+					<div class="box-example focus">
+						<form>
+							<ul>
+								<li>Им'я: <input type="text" class="focus-li1 hover"></li>
+								<li>Прізвище: <input type="text" class="focus-li2 hover"></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+				<!-- :target -->
+				<div class="box">
+					<div class="box-content">
+						<h2>Селектор <span class="span-focus">":<span class="span-active">target</span>"</span></h2>
+						<p>Адреса у вигляді - "https://website.ua/forum#first" вказує на певний елемент на сторінці з ідентифікатором first (id="first").</p>
+						<p>Цей елемент називається цільовим. Селектор :target обирає цей цільовий елемент.</p>
+					</div>
+					<div class="box-example target">
+						<ul>
+							<li><a href="#h2">Історія 1 (нажати)</a></li>
+							<li><a href="#h3">Історія 2 (нажати)</a></li>
+						</ul>
+						<div id="h2">
+							<h2>Історія 1</h2>
+							<p>
+								Двоголо́вий оре́л — фантастичний птах, гербова фігура в геральдиці. Зображається у вигляді орла, який має дві голови. Використовується в декоративному мистецтві та геральдиці.
+							</p>
+						</div>
+						<div id="h3">
+							<h3>Історія 2</h3>
+							<p>
+								Чо́рне со́нце (англ. Black Sun, нім. Schwarze Sonne) — окультний символ, що широко використовується сучасними неонацистами, а також деякими неоязичниками, езотериками.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="position-pseudo-classes">
+				<h2>Псевдокласи "положення" в коді</h2>
+				<p>Приклади використання псевдокласів "положення" в коді</p>
+				<!-- :first-child -->
+				<div class="box">
+					<div class="border-box ">
+						<h3>:first-child</h3>
+						<p class="description">Дозволяє стилізувати перший дочірній елемент</p>
+						<div class="border-box-child first-child">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- :first-of-type -->
+				<div class="box">
+					<div class="border-box">
+						<h3>:first-of-type</h3>
+						<p class="description">Дозволяє стилізувати перший дочірній елемент конкретного
+							типу</p>
+						<div class="border-box-child first-of-type-div">
+							<p>1st element p</p>
+							<div>2nd element div</div>
+							<div>3rd element div</div>
+						</div>
+					</div>
+				</div>
+				<!-- :last-child -->
+				<div class="box">
+					<div class="border-box last-child">
+						<h3>:last-child</h3>
+						<p class="description">Дозволяє стилізувати останній дочірній елемент
+						</p>
+						<div class="border-box-child last-child">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- :last-of-type -->
+				<div class="box">
+					<div class="border-box">
+						<h3>:last-of-type</h3>
+						<p class="description">Дозволяє стилізувати останній дочірній елемент конкретного типу
+						</p>
+						<div class="border-box-child last-of-type-div">
+							<p>1st element p</p>
+							<div>2nd element div</div>
+							<div>3rd element div</div>
+							<p>4th element p</p>
+						</div>
+					</div>
+				</div>
+				<!-- :nth-child (порядковий номер) -->
+				<div class="box">
+					<div class="border-box">
+						<h3>:nth-child (порядковий номер)</h3>
+						<p class="description">Дозволяє стилізувати елемент за порядковим номером: :nth-child(2)</p>
+						<div class="border-box-child nth-child">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- :nth-child (кожен n + починаючи з) -->
+				<div class="box">
+					<div class="border-box">
+						<h3>:nth-child (кожен n + починаючи з)</h3>
+						<p class="description">Дозволяє стилізувати елемент за формулою: ":nth-child(2n + 3)"</p>
+						<div class="border-box-child nth-child-n">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+								<li>4th element</li>
+								<li>5th element</li>
+								<li>6th element</li>
+								<li>7th element</li>
+								<li>8th element</li>
+								<li>9th element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- :nth-child (парних/не парних) -->
+				<div class="box">
+					<div class="border-box">
+						<h3>:nth-child (кожен n + починаючи з)</h3>
+						<p class="description">Приклад стилізації парних/не парних рядків:</p>
+						<div class="border-box-child nth-child-n2">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+								<li>4th element</li>
+								<li>5th element</li>
+								<li>6th element</li>
+								<li>7th element</li>
+								<li>8th element</li>
+								<li>9th element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- :nth-child (Приклад побудови сітки) -->
+				<div class="box">
+					<div class="border-box">
+						<h3>:nth-child (кожен n + починаючи з)</h3>
+						<p class="description">Приклад побудови сітки:</p>
+						<div class="border-box-child nth-child-grid">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+								<li>4th element</li>
+								<li>5th element</li>
+								<li>6th element</li>
+								<li>7th element</li>
+								<li>8th element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="position-pseudo-classes">
+				<h2>Псевдоклас виключення</h2>
+				<p>Приклади використання псевдокласу "виключення"</p>
+				<div class="box">
+					<div class="border-box">
+						<h3>:not</h3>
+						<p class="description">Дозволяє стилізувати елемент за умови: :not(:last-child):</p>
+						<div class="border-box-child not-last-child">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>3rd element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pseudo-elements">
+				<h2>Псевдоелементи ::before та ::after</h2>
+				<p>Приклади використання псевдоелементів</p>
+				<div class="box">
+					<div class="border-box">
+						<h3>::before</h3>
+						<p class="description">Дозволяє додати контент та стилізувати його перед основноим елементом
+						</p>
+						<div class="border-box-child before">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>
+									<div class="before-active">
+										<ul>
+											<li>3rd element</li>
+											<li>4th element</li>
+											<li>5th element</li>
+											<li>6th element</li>
+										</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="border-box">
+						<h3>::after</h3>
+						<p class="description">Дозволяє додати контент та стилізувати його після основного елемента
+						</p>
+						<div class="border-box-child after">
+							<ul>
+								<li>1st element</li>
+								<li>2nd element</li>
+								<li>
+									<div class="after-active">
+										<ul>
+											<li>3rd element</li>
+											<li>4th element</li>
+											<li>5th element</li>
+											<li>6th element</li>
+										</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer" class="footer">
+		<div class="footer-container">
+			<ul class="footer-list">
+				<li class="footer-item"><a href="index.html">Псевдокласи та псевдоелементи</a></li>
+				<li class="footer-item"><a href="game.html">Гра "Дійти до кінця"</a></li>
+				<li class="footer-item"><a href="blocks.html">Блоки з макету</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>

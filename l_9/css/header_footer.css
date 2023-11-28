@@ -1,0 +1,51 @@
+/* Скидання стилів */
+@import url("reset.css");
+/* fonts */
+@import url("fonts.css");
+/* Основні стилі */
+/* ----------header--------- */
+.header,
+.footer {
+	padding: 40px 0;
+	background: #f4f4f4;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.header-container,
+.footer-container {
+	max-width: 1245px;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-item,
+.footer-item {
+	font-size: 20px;
+	margin-right: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	display: inline-block;
+}
+.header-item:first-child,
+.footer-item:first-child {
+	margin-left: 0;
+}
+.header-item:last-child,
+.footer-item:last-child {
+	margin-right: 0;
+}
+.header-item a,
+.footer-item a {
+	display: inline-block;
+	border: 2px solid #37393f;
+	padding: 10px;
+	color: #37393f;
+	transition: all 0.3s;
+}
+.header-item a:hover,
+.footer-item a:hover {
+	background: #37393f;
+	color: #fff;
+}

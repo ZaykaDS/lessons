@@ -1,0 +1,247 @@
+/* Скидання стилів */
+@import url("reset.css");
+/* fonts */
+@import url("fonts.css");
+/* Основні стилі */
+body {
+	font-family: "Inter", serif;
+	color: #7d7d7d;
+	font-size: 18px;
+	line-height: 146.187%; /* 26.314px */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #5376de;
+	font-size: 20px;
+}
+
+.container {
+	max-width: 1245px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.box {
+	border: 2px solid #37393f;
+	background-color: #f3f3f3;
+	padding: 10px;
+}
+.box {
+	margin-bottom: 10px;
+}
+.box-example {
+	text-align: center;
+	padding: 10px;
+}
+
+.box-example > div {
+	display: inline-block;
+	border: 2px solid #37393f;
+	width: 49%;
+	padding: 5px;
+}
+/* :hover */
+span:hover,
+.example-text:hover > p {
+	border-radius: 4px;
+	color: #c7254e;
+	cursor: pointer;
+}
+.example-bcgnd:hover {
+	border: 1px solid #79a419;
+	background: #4d6910;
+	color: #d4d843;
+	cursor: pointer;
+}
+
+/* :active */
+
+.span-active:active,
+.example-text:active > p {
+	background: transparent;
+	text-shadow: 5px 5px 15px rgb(60, 63, 204);
+	text-decoration: underline;
+}
+.example-bcgnd:active {
+	border: 1px solid #feed00;
+	padding: 10px;
+	background: #0026ff;
+	color: #d4d843;
+	cursor: pointer;
+}
+.box-hover > *:active {
+	background: none;
+	text-shadow: none;
+	text-decoration: none;
+}
+/* :visited */
+a:visited {
+	color: #1363fc;
+}
+.example-list > li:hover {
+	border: 1px solid #feed00;
+}
+.example-list > li > a:hover {
+	background: #0026ff;
+	color: #ffffff;
+}
+/* :focus */
+.focus-li1,
+.focus-li2 {
+	border: 1px solid #000000;
+}
+input.focus-li1:focus {
+	background-color: orange;
+}
+input.test2:focus {
+	background-color: khaki;
+}
+/* target */
+.target > #h2,
+.target > #h3 {
+	border: none;
+}
+
+#h2:target {
+	border: 2px solid black;
+}
+#h3:target {
+	border: 2px solid rgb(119, 150, 3);
+	background-color: #0ccaff;
+	color: #ffffff;
+}
+
+/* :first-child */
+.border-box {
+	background-color: #fff;
+	border: 2px solid hsl(198, 93%, 46%);
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.border-box > h3 {
+	color: #000;
+	font-size: 24px;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.border-box-child {
+	border: 2px solid #15dcce;
+	padding: 10px;
+}
+.border-box-child > ul > li,
+.border-box-child > div,
+.border-box-child > p {
+	margin: 10px;
+	border: 2px solid #09ff00;
+}
+.first-child > ul > li:first-child {
+	background-color: #8ab3ff;
+	color: #fff;
+}
+.first-of-type-div > div:first-of-type,
+.last-of-type-div > div:last-of-type {
+	background-color: #00cbef;
+	color: #fff;
+}
+.last-child > ul > li:last-child {
+	background-color: #8ab3ff;
+	color: #fff;
+}
+.nth-child > ul > li:nth-child(2) {
+	background-color: #15c44a;
+	color: #fff;
+}
+.nth-child-n > ul > li:nth-child(3n + 2) {
+	background-color: #165ee3;
+	color: #fff;
+}
+.nth-child-n2 > ul > li:nth-child(2n) {
+	background-color: #8ab3ff;
+}
+.nth-child-n2 > ul > li:nth-child(2n + 1) {
+	background-color: #a8db1a;
+}
+.nth-child-grid > ul > li {
+	display: inline-block;
+}
+.nth-child-grid > ul > li:nth-child(4n + 1) {
+	width: 35%;
+	background-color: #d4fe00;
+}
+
+.nth-child-grid > ul > li:nth-child(4n + 2) {
+	width: 60%;
+	background-color: #48c0ec;
+	color: #fff;
+}
+.nth-child-grid > ul > li:nth-child(4n + 3) {
+	width: 55%;
+	background-color: #320afc;
+	color: #fff;
+}
+.nth-child-grid > ul > li:nth-child(4n + 4) {
+	width: 40%;
+	background-color: #ed0326;
+	color: #fff;
+}
+.not-last-child > ul > li:not(:last-child) {
+	background-color: #320afc;
+	color: #fff;
+}
+.before > ul > li:first-child::before {
+	content: "♥";
+}
+.before > ul > li:nth-child(2)::before {
+	content: "";
+	display: inline-block;
+	background-color: #ff0011;
+	width: 10px;
+	height: 30px;
+	border-radius: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.before-active > ul > li:hover {
+	cursor: pointer;
+}
+.before-active > ul > li:hover::before {
+	content: "";
+	display: inline-block;
+	background-color: #ff0011;
+	width: 10px;
+	height: 30px;
+	border-radius: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.after > ul > li:first-child::after {
+	content: "♥";
+	margin-left: 10px;
+}
+.after > ul > li:nth-child(2)::after {
+	content: "";
+	display: inline-block;
+	background-color: #ff0011;
+	width: 10px;
+	height: 30px;
+	border-radius: 10px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.after > ul > li:hover {
+	cursor: pointer;
+}
+
+.after-active > ul > li:hover::after {
+	content: "";
+	display: block;
+	background-color: #4400ff;
+	width: 13%;
+	height: 5px;
+	border-radius: 10px;
+}

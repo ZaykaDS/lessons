@@ -1,0 +1,127 @@
+/* Скидання стилів */
+@import url("reset.css");
+/* fonts */
+@import url("fonts.css");
+/* Основні стилі */
+@import url("game.css");
+/* Game */
+.my-game {
+	max-width: 1270px;
+	margin: 0 auto 15px;
+}
+
+.game-container {
+	margin: 0 auto;
+	min-height: 800px;
+	max-width: 900px;
+	border: 1px solid rgb(13, 152, 1);
+}
+
+.game-title {
+	text-align: center;
+	font-size: 24px;
+	color: #8f1d1d;
+	margin-bottom: 10px;
+}
+
+/* game */
+.bg-color {
+	background-color: #ffffff;
+}
+
+.game-square-1,
+.game-square-2,
+.game-square-3,
+.game-square-4,
+.game-square-5,
+.game-square-6,
+.game-square-7,
+.game-square-8,
+.game-square-9,
+.game-square-10 {
+	width: 50px;
+	height: 50px;
+	visibility: hidden;
+}
+
+.game-square-1 {
+	background-color: #9b4e4e;
+	visibility: visible;
+}
+
+.game-square-2 {
+	width: 850px;
+	height: 50px;
+}
+
+.game-square-3 {
+	margin-left: 800px;
+}
+
+.game-square-4 {
+	width: 500px;
+	margin-left: 350px;
+}
+
+.game-square-5 {
+	margin-left: 350px;
+}
+
+.game-square-6 {
+	width: 350px;
+	margin-left: 350px;
+}
+
+.game-square-7 {
+	height: 150px;
+	margin-left: 650px;
+}
+
+.game-square-8 {
+	width: 201px;
+	margin-left: 475px;
+}
+.game-square-9 {
+	width: 23px;
+	height: 150px;
+	margin-left: 464px;
+}
+
+.game-square-10 {
+	width: 150px;
+	height: 150px;
+	margin-left: 400px;
+	background-color: #2dff03;
+	text-align: center;
+	position: relative;
+}
+.game-square-10 > p {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 60px;
+}
+.game-square-1:hover + .game-square-2,
+.game-square-2:hover,
+.game-square-2:hover + .game-square-3,
+.game-square-3:hover,
+.game-square-3:hover + .game-square-4,
+.game-square-4:hover,
+.game-square-4:hover + .game-square-5,
+.game-square-5:hover,
+.game-square-5:hover + .game-square-6,
+.game-square-6:hover,
+.game-square-6:hover + .game-square-7,
+.game-square-7:hover,
+.game-square-7:hover + .game-square-8,
+.game-square-8:hover,
+.game-square-8:hover + .game-square-9,
+.game-square-9:hover,
+.game-square-9:hover + .game-square-10,
+.game-square-10:hover {
+	visibility: visible;
+	background-color: #9b4e4e;
+}
