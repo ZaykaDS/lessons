@@ -63,7 +63,7 @@ body {
 }
 .fixed__one {
 	position: fixed;
-	bottom: 55%;
+	bottom: 40%;
 	right: 3.5%;
 	z-index: 25;
 }
